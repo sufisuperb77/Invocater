@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="orderForm">
+        <label for="eventName">Event Name:</label><br>
+        <input type="text" id="eventName" name="eventName"><br>
+
+        <div class="meal-time">
+            <input type="checkbox" id="breakfastCheck" name="mealTime" value="Breakfast">
+            <label for="breakfastCheck">Breakfast</label>
+            <div class="qty-inputs">
+                <input type="number" id="breakfastRegular" name="breakfastRegular" placeholder="Regular">
+                <input type="number" id="breakfastVip" name="breakfastVip" placeholder="VIP">
+            </div>
+        </div>
+
+        <div class="meal-time">
+            <input type="checkbox" id="lunchCheck" name="mealTime" value="Lunch">
+            <label for="lunchCheck">Lunch</label>
+            <div class="qty-inputs">
+                <input type="number" id="lunchRegular" name="lunchRegular" placeholder="Regular">
+                <input type="number" id="lunchVip" name="lunchVip" placeholder="VIP">
+            </div>
+        </div>
+
+        <div class="meal-time">
+            <input type="checkbox" id="dinnerCheck" name="mealTime" value="Dinner">
+            <label for="dinnerCheck">Dinner</label>
+            <div class="qty-inputs">
+                <input type="number" id="dinnerRegular" name="dinnerRegular" placeholder="Regular">
+                <input type="number" id="dinnerVip" name="dinnerVip" placeholder="VIP">
+            </div>
+        </div>
+
+        <label for="eventDate">Event Date:</label><br>
+        <input type="date" id="eventDate" name="eventDate">
+       
+        <div><button class="submit-button" type="submit">Submit Order</button></div>
+    </form>
+
+    <table class="tg">
+      <thead>
+          <tr>
+              <th class="tg-0pky">No</th>
+              <th class="tg-0lax">Name of Event</th>
+              <th class="tg-0lax">Date</th>
+              <th class="tg-0lax">Quantity</th>
+              <th class="tg-0lax">Unit Price</th>
+              <th class="tg-0lax">Total</th>
+              <th class="tg-0lax">Edit</th>
+              
+          </tr>
+      </thead>
+      <tbody id="orderTableBody">
+        <!-- Table body content goes here -->
+      </tbody>
+  </table>
+
+    <script src="script.js"></script>
+    <script src="scripttable.js"></script>
+</body>
+</html>
